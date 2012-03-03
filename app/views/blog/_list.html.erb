@@ -1,0 +1,24 @@
+<% list.each do |blog_post|%> 
+    <h2><% if blog_post.extlink.blank? %>
+        <%= link_to blog_post.title, blog_post %>
+        <% else %>
+        <%= link_to blog_post.title, blog_post.extlink, :popup => true %>
+        <% end %>
+    </h2>
+    <p style="font-size:10px;">
+        Posted at <%= blog_post.created_at.to_s(:long) %>
+    </p>
+    <p>
+        <% index = blog_post.body.index('.') %>
+        <% intro = blog_post.body %>
+        <%= intro %>
+        <% if blog_post.extlink.blank? %>
+        <%= link_to 'more...', blog_post %>
+        <% else %>
+        <%= link_to 'more...', blog_post.extlink, :popup => true %>
+        <% end %>
+    </p>
+<hr />
+<% end %>
+
+<%= will_paginate list %>

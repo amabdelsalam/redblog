@@ -1,0 +1,18 @@
+<%= link_to 'New Post', '/blog/new'%>
+<hr />
+
+<h1 id="title" class="page_title">Blog Posts</h1>
+
+<% @posts.each do |post|%> 
+    <h2><%= link_to post.title, "/blog/show/#{post.id}" %></h2>
+    <p style="font-size:10px;">
+        Posted at <%= post.created_at.to_s(:long) %>
+    </p>
+    <p>
+        <% index = post.body.index('.') %>
+        <% intro = post.body %>
+        <%= intro %>
+        <%= link_to 'more...', "/blog/show/#{post.id}" %>
+    </p>
+<% end %>
+

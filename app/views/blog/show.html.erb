@@ -1,0 +1,11 @@
+<%= link_to 'New Post', '/blog/new'%> | 
+<%= link_to 'Edit Post', "/blog/edit/#{@post.id}" %>
+
+<hr />
+<h2>
+  <%=h @post.title %>
+</h2>
+
+<p>
+  <%= textilizable @post.body %>
+</p>
