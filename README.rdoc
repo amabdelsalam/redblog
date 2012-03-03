@@ -4,9 +4,9 @@ RedBlog is a simple blog plugin for redmine 1.2+ it adds a blog entry in the top
 
 = Installation
 
-1- extract RedBlog to  vendors/plugin
-2- rake db:migrate_plugins RAILS_ENV=production
-3- Done
+* extract RedBlog to  vendors/plugin
+* rake db:migrate_plugins RAILS_ENV=production
+* Done
 
 For any feedback/bugs, please contact me at amabdelsalam@gmail.com
 
