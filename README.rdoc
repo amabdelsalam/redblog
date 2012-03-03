@@ -11,7 +11,7 @@ RedBlog is a simple blog plugin for redmine 1.2+ it adds a blog entry in the top
 For any feedback/bugs, please contact me at amabdelsalam@gmail.com
 
 = Planned Future Work
-1- Tags.
-2- File uploads.
-3- Blog per project.
-4- permissions from administrator to post.
+* Tags.
+* File uploads.
+* Blog per project.
+* permissions from administrator to post.
