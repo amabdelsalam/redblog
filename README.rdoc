@@ -1,6 +1,6 @@
 = redblog
 
-RedBlog is a simple blog plugin for redmine 1.2+ it adds a blog entry in the top menu. User must login to redmine in order to post to blog
+RedBlog is a simple blog plugin for redmine 1.2+ it adds a blog entry in the top menu. User must login to redmine in order to post to blog. Posting to blog is done through a textile editor used by Redmine with toolbar for formatting capabilities.
 
 = Installation
 

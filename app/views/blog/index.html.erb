@@ -11,8 +11,8 @@
     <p>
         <% index = post.body.index('.') %>
         <% intro = post.body %>
-        <%= intro %>
-        <%= link_to 'more...', "/blog/show/#{post.id}" %>
+        <%= textilizable intro %>
+        <%#= link_to 'more...', "/blog/show/#{post.id}" %>
     </p>
 <% end %>
 
